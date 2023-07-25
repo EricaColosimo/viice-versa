@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viice-Versa-Erica</title>
+    <!-- Importo i font-->
+    <link rel="stylesheet" href="font/style.css">
+    <!-- Mio stile -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+
+<body>
+
+
+    <header>
+        <div class="slider w"></div>
+
+        <nav id="menu" class="menu">
+            <ul>
+                <li><a href="#">Vino</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Account</a></li>
+
+                <li><a href="home" id="logo">
+                        <img src="img/logo.svg" alt="logo image">
+                    </a>
+                </li>
+
+                <li><a href="#" id="separe">-</a></li>
+
+                <li><a href="#">Whatsupp</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#" id="cart" onclick="apri_cart()">Cart</a></li>
+
+                <li><span id="parola" class="hamburger-menu">Close</span></li>
+
+        </nav>
+
+        <div class="hamburger-menu">
+            <div class="contorno_menu">
+                <span class="icon-menu" onclick="apri_menu()">Menu</span>
+                <span img><img src="img/logo.svg" alt="logo image"></span>
+                <span>Cart</span>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="cart-close">
+        <div class="title">
+
+
+            <h2>Carrelo</h2>
+            <div class="chiusura-cart">
+
+
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+
+        <div class="testo-cart-close">
+            <p>Il tuo carrello è vuoto.</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="fixed" id="fixed">
+            <div class="fixed__content" onclick="apri_shop()">
+                <span class="button">Add to cart</span>
+            </div>
+        </div>
+        <div class="shop-close">
+            <div id="tabella up">
+                <div class="riga">
+                    <div class="box">
+                        <div class="box-img up">
+                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/07/075flache-1.png" alt="">
+                        </div>
+                        <div class="box-text up">
+                            <p>1,75L Bottle<br>
+                                CHF 16.50</p>
+                        </div>
+                    </div>
+                    <div class="box up">
+                        <div class="box-img up">
+                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/07/box_6-bottles_132x178.png"
+                                alt="">
+                        </div>
+                        <div class="box-text up">
+                            <p>box of 6 bottles 0,75L<br>
+                                CHF99.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="riga">
+                    <div class="box">
+                        <div class="box-img up">
+                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/07/magnum-1.png" alt="">
+                        </div>
+                        <div class="box-text up">
+                            <p>1,5L magnum bottle<br>
+                                CHF36.00</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-img up">
+                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/07/box_wood_132x178.png"
+                                alt="">
+                        </div>
+                        <div class="box-text up">
+                            <p>1,5l magnum<br>
+                                CHF46.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="riga">
+                    <div class="add-button">
+                        <a id="add-button-a" href="#">
+                            chf 16.5 - add to cart
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- HERO SECTION-->
+        <div class="container">
+
+            <div class="hero-section">
+                <img src="img/hero.webp" alt="hero-section">
+            </div>
+        </div>
+
+
+
+        <!-- SEZIONE SCRITTA PAZZA-->
+
+        <div class="container_scritta_pazza">
+            <div class="contenuto">
+                <div class="scritta1">
+                    <div class="titolo">
+                        <h2>VIICE VERSA - Anything but ordinary</h2>
+                    </div>
+                </div>
+
+                <div class="container_testo">
+                    <p>We stand for a fun
+                        <span class="immagine">
+                            <iframe
+                                src="https://player.vimeo.com/video/738946229?h=a5511d1aec&badge=0&autoplay=1&loop=1&muted=1&background=1&autopause=0&player_id=0&app_id=58479"
+                                allow="autoplay" frameborder="0">
+                            </iframe>
+                        </span> lifestyle and live wine in a colourful, modern
+                        <span class="immagine">
+                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/wz_22-1-300x181.png">
+                        </span>and urban way
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEZIONE IMG SPIAGGIA BG-->
+        <div class="sezione-art">
+            <span class="img-bg">
+                <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/art-bg.webp">
+            </span>
+            <div class="testo_art">
+                <h2>The art of sipping vino</h2>
+            </div>
+        </div>
+
+        <!-- SEZIONI 2 IMMAGINI -->
+
+        <div class="container_img_doppia">
+            <div class="imggrande">
+                <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/friends.webp" alt="">
+                <div class="imgpiccolo">
+                    <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/friends-single.webp" alt="">
+                </div>
+            </div>
+            <div class="testo_img_doppia">
+                <p>Although taste is very subjective, there are clear rules regarding wine consumption.</p>
+                <p>This requires a certain experience/expertise, which is too complicated and overwhelming for many
+                    people.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- SEZIONE WAVE-->
+        <div class="container">
+            <div class="wave">
+                <svg id="text-container" viewBox="0 0 856 204" xmlns="http://www.w3.org/2000/svg">
+                    <path id="text-curve" d="M1 76.0002C453 472 490 -207 855 69.0003" fill="none" stroke="#000" />
+
+                    <text y="40" font-size="32">
+                        <textPath id="text-path" href="#text-curve" startOffset="200">
+                            But this does not have to be the case
+                        </textPath>
+
+                    </text>
+
+                </svg>
+
+
+                <!--<p>But this does not have to be the case.</p>-->
+            </div>
+        </div>
+
+        <!-- SEZIONE GRID IMMAGINI-->
+        <div class="grid-container">
+            <div class="img-1">
+                <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/enjoy-1.webp" alt="">
+            </div>
+            <div class="img-2">
+                <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/enjoy-2.webp" alt="">
+            </div>
+            <div class="img-3" border-radius="0px">
+                <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/enjoy-3-489x1024.webp" alt="">
+            </div>
+            <div class="img-testo">
+                <h3>You don't need a sommelier's palate to enjoy this wine</h3>
+            </div>
+            <div class="img-4">
+                <iframe
+                    src="https://player.vimeo.com/video/738945322?h=a5511d1aec&badge=0&autoplay=1&loop=1&muted=1&background=1&autopause=0&player_id=0&app_id=58479"
+                    allow="autoplay" frameborder="0"></iframe>
+            </div>
+            <div class="img-5" style="width: 95%">
+                <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/enjoy-5.webp" alt="">
+
+            </div>
+            <div class="img-6">
+                <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/enjoy-6.webp" alt="">
+            </div>
+        </div>
+
+        <!-- 1A SEZIONE VERDE -->
+        <div class="relax">
+            <div class="relax-box">
+                <div class="relax-box-video">
+                    <iframe
+                        src="https://player.vimeo.com/video/738946423?h=a5511d1aec&badge=0&autoplay=1&loop=1&muted=1&background=1&autopause=0&player_id=0&app_id=58479"
+                        allow="autoplay" frameborder="0">
+                    </iframe>
+                </div>
+                <div class="relax-box-testo">
+                    <h4>
+                        Whether relaxed with friends in the park, as an aperitif before you go out or as a gift when
+                        you
+                        are
+                        invited, VIICE VERSA always fits.
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEZIONE CELEB-->
+        <div class="celeb">
+
+            <!--<div class="celeb-top">-->
+            <div class="celeb-top-img dx">
+                <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/seleb-1.webp" alt="">
+            </div>
+
+            <div class="celeb-top-text">
+                <h3>
+                    Celebrate the uncomplicated enjoyment of wine and generally the beautiful moments in
+                    lifestyle
+                </h3>
+            </div>
+
+            <div class="celeb-top-img sx">
+                <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/seleb-2.webp" alt="">
+            </div>
+
+            <div class="celeb-top-video">
+                <iframe
+                    src="https://player.vimeo.com/video/738945211?h=a5511d1aec&badge=0&autoplay=1&loop=1&muted=1&background=1&autopause=0&player_id=0&app_id=58479V"
+                    allow="autoplay" frameborder="0"></iframe>
+            </div>
+
+            <div class="celeb-bottom-video">
+                <iframe
+                    src="https://player.vimeo.com/video/738945462?h=a5511d1aec&badge=0&autoplay=1&loop=1&muted=1&background=1&autopause=0&player_id=0&app_id=58479"
+                    allow="autoplay" frameborder="0"></iframe>
+            </div>
+
+            <div class="celeb-bottom-img">
+                <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/seleb-4.webp" alt="">
+            </div>
+
+        </div>
+
+        <!-- SEZIONE CHESS-->
+        <div class="chess">
+            <div class="chess-box">
+                <div class="chess-box-text">
+                    <p>VIICE VERSA means “the other way around.” This is basically our philosophy. VIICE VERSA
+                        bianco is
+                        a
+                        quality white wine, but more modern, creative and appealing than conventional wines. Do you
+                        also
+                        think that the wine industry is old-fashioned? We break new ground!
+                    </p>
+                </div>
+                <div class="chess-box-img">
+                    <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/chess-1.webp" alt="">
+                </div>
+            </div>
+
+            <div class="chess-box-bottom">
+                <div class="chess-box-text">
+                    <p>Why is the logo a palm tree? For us and many people, the palm tree is the symbol of positive
+                        vibes.
+                        We want to capture this very special feeling with every bottle of wine and share it with as
+                        many
+                        people as possible.
+                    </p>
+                </div>
+                <div class="chess-box-img">
+                    <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/chess-2.webp" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SEZIONE VIDEO BG-->
+        <div class="bg-video">
+            <iframe
+                src="https://player.vimeo.com/video/738944979?h=a5511d1aec&badge=0&autoplay=1&loop=1&muted=1&background=1&autopause=0&player_id=0&app_id=58479"
+                allow="autoplay" frameborder="0"></iframe>
+        </div>
+
+        <!-- SEZIONE WINE-->
+        <div class="wine">
+            <div class="wine-bottle">
+                <div class="wine-bottle-img">
+                    <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/bottle.webp" alt="">
+                </div>
+            </div>
+
+            <div class="wine-title">
+                <h2>
+                    il Vino
+                </h2>
+            </div>
+            <div class="wine-box">
+                <div class="wine-box-el">
+                    <div class="wine-box-text">
+                        <span class="title">origin</span>
+                        <h5>
+                            VIICE VERSA wine is a blend of the local Carricante and Catarratto grapes, produced in
+                            an
+                            agriculturally sustainable manner in the vineyards of Erice in Sicily. No pesticides,
+                            only
+                            oganic fertilizer.
+                        </h5>
+                    </div>
+                    <div class="wine-box-el-frame">
+                        <span class="middle video">
+                            <iframe
+                                src="https://player.vimeo.com/video/738945099?h=a5511d1aec&badge=0&autoplay=1&loop=1&muted=1&background=1&autopause=0&player_id=0&app_id=58479"
+                                allow="autoplay" frameborder="0"></iframe>
+                        </span>
+                        <span class="small">
+                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/wine-2-289x300.webp"
+                                alt="">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="wine-box-el right">
+                    <div class="wine-box-text">
+                        <span class="title">Tradition</span>
+                        <h5>
+                            The history of Casa Vinicola Fazio, our Wine Partner and Producer, is inextricably
+                            linked to
+                            the
+                            commitment and passion of a family that, for four generations, has been engaged in the
+                            cultivation and in the production of quality wines.
+                        </h5>
+                    </div>
+                    <div class="wine-box-el-frame">
+                        <span class="big">
+                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/wine-3-828x1024.webp"
+                                alt="">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="wine-box-el">
+                    <div class="wine-box-text">
+                        <span class="title">responsability</span>
+                        <h5>
+                            We use natural resources responsibly to minimize human intervention. We respect nature
+                            and
+                            protect biodiversity. Also we restore value to the territory and it’s reference
+                            communities.
+                        </h5>
+                    </div>
+                    <div class="wine-box-el-frame">
+                        <span class="middle">
+                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/wine-4.webp"></iframe>
+                        </span>
+                        <span class="small">
+                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/wine-5-289x300.webp"
+                                alt="">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="wine-box-el right">
+                    <div class="wine-box-text">
+                        <span class="title">taste</span>
+                        <h5>
+
+                            A dry vino bianco with a dash of exotic fruits. Light, fresh, the definition of "easy
+                            drinking".
+                            This makes VIICE VERSA the perfect allrounder.
+                        </h5>
+                    </div>
+                    <div class="wine-box-el-frame">
+                        <span class="big">
+                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/wine-6-828x1024.webp"
+                                alt="">
+                        </span>
+                    </div>
+                </div>
+
+                <!-- SCRITTE A ONDA-->
+                <div class="container">
+                    <div class="wave bottom">
+                        <p>Light and fresh, the definition of easy drink</p>
+                    </div>
+                    <div class="wave bottom bk">
+                        <p>Light and fresh, the definition of easy drink</p>
+                    </div>
+                </div>
+            </div>
+            <!--</div>-->
+
+            <!-- WINE MIX IT UP-->
+            <div class="wine-mix">
+                <div class="wine-mix-top">
+                    <h2>MIX IT UP</h2>
+                    <span class="subtitle">
+                        <p>
+                            If you mix wine, why is it always with water or soda? This is too ordinary for us, we want
+                            to go new ways and offer you an alternative. Get a piece of summer directly into your glass
+                            and mix one of our VIICE VERSA Summer Drinks.
+                        </p>
+                    </span>
+                </div>
+
+                <div class="wine-mix">
+                    <div class="wine-mix-cards">
+                        <!-- PRIMA CARD-->
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/mix-1.webp" alt="">
+                            </div>
+                            <div class="card-text">
+                                <span class="card-text-title">VIICE VERSA Summer</span>
+                                <span class="card-text-list">Mix:</span>
+                                <ul>
+                                    <li>
+                                        Fill wine glass halfway with ice
+                                    </li>
+                                    <li>1dl VIICE VERSA</li>
+                                    <li>1dl grapefruit tonic</li>
+                                    <li>1 slice of grapefuit</li>
+                                    <li>1 sprid of rosemary</li>
+                                </ul>
+                            </div>
+                            <div class="card-ice">
+                                <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/mix-4.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- SECONDA CARD -->
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/mix-2.webp" alt="">
+                                <span class="lime">
+                                    <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/mix-3.webp"
+                                        alt="">
+                                </span>
+                            </div>
+                            <div class="card-text">
+                                <span class="card-text-title">VIICE VERSA Blossom</span>
+                                <span class="card-text-list">Mix:</span>
+                                <ul>
+                                    <li>
+                                        Fill wine glass halfway with ice
+                                    </li>
+                                    <li>1dl VIICE VERSA</li>
+                                    <li>1dl cherry blossom tonic</li>
+                                    <li>2 slice of lime</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- DOVE LA BOTTIGLIA SI FERMA-->
+                <div class="product">
+                    <div class="product-img">
+                        <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/shop.webp" alt="">
+                    </div>
+                    <div class="summary">
+                        <div class="summary-text">
+                            <div class="summary-text-top">
+                                <span class="summary-text-top-pretitle">Viice Versa</span>
+                                <span class="summary-text-top-title">Bianco</span>
+                                <span class="summary-text-top-subtitle">
+                                    Wonderful with aperitifs, fresh fish, crustaceans
+                                    or just to enjoy life.</span>
+                                <span class="summary-text-top-percent">11,5% Vol</span>
+                            </div>
+                            <div class="summary-text-list">
+                                <ul>
+                                    <li class="el-title">
+                                        <span>
+                                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/native.svg"
+                                                alt="">
+                                        </span>
+                                        native grapes from Siciliy
+                                    </li>
+                                    <li class="el-title">
+                                        <span>
+                                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/organic.svg"
+                                                alt="">
+                                        </span>
+                                        organic fertilizer
+                                    </li>
+                                    <li class="el-title">
+                                        <span>
+                                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/fruits.svg"
+                                                alt="">
+                                        </span>
+                                        with exotic fruits
+                                    </li>
+                                    <li class="el-title">
+                                        <span>
+                                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/pestecide.svg"
+                                                alt="">
+                                        </span>
+                                        no pesticides
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- FALSO FORM -->
+                        <div class="shop">
+                            <div id="tabella">
+                                <div class="riga">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/07/075flache-1.png"
+                                                alt="">
+                                        </div>
+                                        <div class="box-text">
+                                            <span class="box-text-box">0,75L Bottle<br></span>
+                                            <span class="box-text-chf">CHF 16.50</span>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/07/box_6-bottles_132x178.png"
+                                                alt="">
+                                        </div>
+                                        <div class="box-text">
+                                            <span class="box-text-box">box of 6 bottles 0,75L<br></span>
+                                            <span class="box-text-chf">CHF99.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="riga">
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/07/magnum-1.png"
+                                                alt="">
+                                        </div>
+                                        <div class="box-text">
+                                            <span class="box-text-box">1,5L magnum bottle<br></span>
+                                            <span class="box-text-chf">CHF36.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="box-img">
+                                            <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/07/box_wood_132x178.png"
+                                                alt="">
+                                        </div>
+                                        <div class="box-text">
+                                            <span class="box-text-box">1,5l magnum bottle<br></span>
+                                            <span class="box-text-chf">CHF46.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="riga">
+                                    <div class="add-button">
+                                        <a id="add-button-a" href="#">
+                                            chf 16.5 - add to cart
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--</div>
+
+         <!-- SEZIONE FACTS-->
+
+                <div class="facts">
+                    <div class="facts-img">
+                        <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/facts.webp" alt="">
+                    </div>
+                    <div class="facts-text">
+                        <h3>Facts</h3>
+                        <ul>
+                            <li>
+                                <span class="title">Type of Wine:</span>
+                                <span class="subtitle">White, D.O.C Sicilia</span>
+                            </li>
+                            <li>
+                                <span class="title">Color:</span>
+                                <span class="subtitle">Yellow gold whit light green highlights</span>
+                            </li>
+                            <li>
+                                <span class="title">Smell:</span>
+                                <span class="subtitle">Full, refined and elegant. With a mild hint of exotic
+                                    fruit</span>
+                            </li>
+                            <li>
+                                <span class="title">Taste:</span>
+                                <span class="subtitle">Long lasting, full-bodied, not too complex and harmonious.</span>
+                            </li>
+                            <li>
+                                <span class="title">Pairing:</span>
+                                <span class="subtitle">Pais wonderfully with aperitifs, fresh fish, crustaceans or just
+                                    to
+                                    enjoy
+                                    life.</span>
+                            </li>
+                            <li><span class="title">Bottle:</span>
+                                <span class="subtitle">75cl & 150cl - 11,5% Vol</span>
+                            </li>
+                            <li>
+                                <span class="title">Best served at:</span>
+                                <span class="subtitle">9C</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="facts right">
+                    <div class="facts-img">
+                        <img src="https://viice-versa.lit.studio/wp-content/uploads/2022/05/facts-1.webp" alt="">
+                    </div>
+                    <div class="facts-text">
+                        <h3>For Nerds:</h3>
+                        <ul>
+                            <li>
+                                <span class="title">winemaker:</span>
+                                <span class="subtitle">Fazio Casa Vinicola in Erice (Sicily,IT)</span>
+                            </li>
+                            <li>
+                                <span class="title">Area of production:</span>
+                                <span class="subtitle">Western Sicily, hilly area in the north of province of
+                                    Trapani</span>
+                            </li>
+                            <li>
+                                <span class="title">Coltivation type:</span>
+                                <span class="subtitle">Sustainable agricolture. Organic fertilizer. No
+                                    pesticides.</span>
+                            </li>
+                            <li>
+                                <span class="title">Grapes:</span>
+                                <span class="subtitle">Carricante 60% - Catarratto 40%</span>
+                            </li>
+                            <li>
+                                <span class="title">Altitude:</span>
+                                <span class="subtitle">350 to 400m above the sea</span>
+                            </li>
+                            <li><span class="title">Density:</span>
+                                <span class="subtitle">4'000 to 4'500 Grapevines</span>
+                            </li>
+                            <li>
+                                <span class="title">Production technology:</span>
+                                <span class="subtitle">Harvesting in boxes, destalked, cold maceration of the skins with
+                                    the
+                                    must
+                                    (4°C). Soft press of the grapes and very slow temperature controlled fermentation.
+                                    Cold
+                                    bottling.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SLIDER -->
+                <div class="slider"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <!-- FOOTER TOP -->
+        <div class="footer-top">
+            <div class="footer-left">
+                <div class="footer-left-text">
+                    if You want to invite us on your event or order many bottles in bulk contact us on
+                    <a href="https://wa.me/1111111" target="_blank">whatsapp</a>
+                    or
+                    <a href="mailto:email@email.com" target="_blank">email@email.com</a>
+                </div>
+            </div>
+
+            <!-- FOOTER CENTER -->
+
+            <div class="footer-center">
+                Please drink responsibly
+            </div>
+
+            <!-- FOOTER RIGHT -->
+
+            <div class="footer-right">
+                <div class="footer-right-top">
+                    <ul>
+                        <li>PRIVACY & COOKIES NOTICE</li>
+                        <li>TERMS & CONDITIONS OF USE</li>
+                    </ul>
+
+                    <div class="footer-en">
+                        <div class="footer-text-en">
+                            <span class="footer-span-en"> EN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FOOTER BOTTOM -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-copy">
+                All rights reserved © VIICE VERSA. 2022
+            </div>
+            <div class="footer-bottom-dev">
+                Design & Development:
+                <span class="footer-bottom-gif">
+                    <img src="https://viice-versa.lit.studio/wp-content/themes/viice-versa/assets/icons/lit-logo.gif"
+                        alt="">
+                </span>
+                <a href="https://lit.studio/" target="_blank">Lit studio</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+
+    </div>
+
+</body>
+
+
+
+</html>

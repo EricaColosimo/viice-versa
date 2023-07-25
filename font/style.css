@@ -1,0 +1,24 @@
+/* FUTURA BOOK */
+@font-face {
+    font-family: 'FuturaStd-Book', sans-serif;
+    src: url('FuturaStd-Book.woff2') format('woff2');
+    src: url('FuturaStd-Book.woff') format('woff');
+    src: url('FuturaStd-Book.otf') format('otf');
+    src: url('FuturaStd-Book.ttf') format('ttf');
+} 
+
+/* FUTURA BOLD */
+@font-face {
+    font-family: 'FuturaStd-Bold', sans-serif;
+    src: url('FuturaStd-Bold.woff2') format('woff2');
+    src: url('FuturaStd-Bold.woff') format('woff');
+    src: url('FuturaStd-Bold.otf') format('otf');
+}
+
+/* MARCELLUS */
+@font-face {
+    font-family: 'Marcellus-Regular', sans-serif;
+    src: url('Marcellus-Regular.woff2') format('woff2');
+    src: url('Marcellus-Regular.woff') format('woff');
+    src: url('Marcellus-Regular.ttf') format('ttf');
+}
