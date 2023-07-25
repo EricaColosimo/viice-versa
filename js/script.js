@@ -15,13 +15,20 @@ close_menu.addEventListener("click", function() {
 })
 
 //APERTURA TENDA CART
-
 var open_cart = document.querySelector('#cart');
+var cartClose = document.querySelector(".cart-close");
+var chiusura_cart = document.querySelector('.chiusura-cart');
 
+// apri
 open_cart.addEventListener("click", function() {
-    let cartClose = document.querySelector(".cart-close");
-    cartClose.classList.toggle("cart--open");  //avevo messo add ma la var succ no run comunque
+    cartClose.classList.add("cart--open");  //avevo messo add ma la var succ no run comunque
 })
+
+// chiudi
+chiusura_cart.addEventListener("click", () => {
+    cartClose.classList.remove("cart--open")
+})
+
 
 //var close_cart = document.querySelector(".chiusura-cart");
 //close_cart.addEventListener("click", function() {
@@ -44,22 +51,22 @@ open_shop.addEventListener("click", function() {
 
 //prova testo a WAVE
 
-var textPath = document.querySelector('#text-path');
+// var textPath = document.querySelector('#text-path');
 
-var textContainer = document.querySelector('#text-container');
+// var textContainer = document.querySelector('#text-container');
 
-var path = document .quarySelector(
-    textPath.getAttribute('href')
-);
+// var path = document .quarySelector(
+//     textPath.getAttribute('href')
+// );
 
-var pathLength = path.getTotalLength();
-console.log(pathLength);
+// var pathLength = path.getTotalLength();
+// console.log(pathLength);
 
-function updateTextPathOffset(offset){
-    textPath.setAttribute('startOffset', offset);
-}
+// function updateTextPathOffset(offset){
+//     textPath.setAttribute('startOffset', offset);
+// }
 
-updateTextPathOffset(pathLength);
+// updateTextPathOffset(pathLength);
 
 //function onScroll(){
   //requestAnimationFrame(function() {
@@ -75,7 +82,7 @@ updateTextPathOffset(pathLength);
 
 
 
-window.addEventListener('scroll',onScroll);
+// window.addEventListener('scroll',onScroll);
 
 
 
