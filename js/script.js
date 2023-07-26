@@ -15,34 +15,42 @@ close_menu.addEventListener("click", function() {
 })
 
 //APERTURA TENDA CART
-var open_cart = document.querySelector('#cart');
 var cartClose = document.querySelector(".cart-close");
-var chiusura_cart = document.querySelector('.chiusura-cart');
 
 // apri
+var open_cart = document.querySelector('#cart');
 open_cart.addEventListener("click", function() {
     cartClose.classList.add("cart--open");  //avevo messo add ma la var succ no run comunque
 })
 
 // chiudi
+var chiusura_cart = document.querySelector('.chiusura-cart');
 chiusura_cart.addEventListener("click", () => {
     cartClose.classList.remove("cart--open")
 })
 
 
-//var close_cart = document.querySelector(".chiusura-cart");
-//close_cart.addEventListener("click", function() {
-//    cartClose.classList.remove("cart--open");
-//})
-
 
 // ADD TO CART
+var shopClose = document.querySelector(".shop-close");
+
+
+//APRI
 var open_shop = document.querySelector('.fixed__content');
 
 open_shop.addEventListener("click", function() {
     let shopClose = document.querySelector(".shop-close");
     shopClose.classList.toggle("shop--open");  //avevo messo add ma la var succ no run comunque
 })
+
+
+//CHIUDI
+var chiude = document.querySelector('#chiude');
+chiude.addEventListener("click", () => {
+    shopClose.classList.remove("shop--open")
+})
+
+
 
 
 
