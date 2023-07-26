@@ -126,19 +126,21 @@ nav ul li a#logo:hover:after {
     right: 23%;
     background: #F8EEDF;
     width: 55%;
-    height: 50%;
     z-index: 100000;
     /*transform: translateY(0);
     transition: all 0.5s ease-in-out;*/
 }
 
 .cart-close .title {
-    display: grid;
-    grid-template-columns: 90% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2E6D4;
+
 }
 
+
 .cart-close h2 {
-    background-color: #F2E6D4;
     padding: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -153,6 +155,7 @@ nav ul li a#logo:hover:after {
     justify-content: center;
     align-items: center;
     height: 100%;
+    background: #F8EEDF;
 }
 
 
