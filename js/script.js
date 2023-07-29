@@ -50,52 +50,43 @@ chiude.addEventListener("click", () => {
     shopClose.classList.remove("shop--open")
 })
 
+// PROVA TESTO WAVE - 2 PROVA - funzionante
 
+document.addEventListener('DOMContentLoaded', () => {
+    const textPath = document.getElementById("text-path");
+    const scrollSpeed = 2.5; //posso cambiare il valore per cambiare velocità testo
+    const animationDirection = "left"; // da che parte andrà il testo
+    const startPosition = -100; // settare la posizione di inizio
 
+    const updateTextPosition = () => {
+        const container = document.querySelector(".wave");
+        const containerRect = container.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
 
+        if (containerRect.top <= windowHeight && containerRect.bottom >= 0) {
+            const directionMultiplier = animationDirection === "right" ? 1 : -1;
+            const startOffset = startPosition + ((containerRect.top - windowHeight) / (containerRect.height + windowHeight)) * 100 * scrollSpeed * directionMultiplier;
+            textPath.setAttribute("startOffset", startOffset + "%");
+        }
+    }
 
-
-
-
-//prova testo a WAVE
-
-// var textPath = document.querySelector('#text-path');
-
-// var textContainer = document.querySelector('#text-container');
-
-// var path = document .quarySelector(
-//     textPath.getAttribute('href')
-// );
-
-// var pathLength = path.getTotalLength();
-// console.log(pathLength);
-
-// function updateTextPathOffset(offset){
-//     textPath.setAttribute('startOffset', offset);
-// }
-
-// updateTextPathOffset(pathLength);
-
-//function onScroll(){
-  //requestAnimationFrame(function() {
-    //var rect = textContainer.getBoundingClientRect();
-    //var scrollPercent = rect.y /
-    //window.innerHeight;
-    //console.log(scrollPercent);
-    //updateTextPathOffset( scrollPercent * 2 * pathLength);
-    //console.log(rect.y);
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                updateTextPosition();
+                }
     
-//    });   
-//}
+            });
+        },
+        { threshold: 0.1 }
+    );
 
+    observer.observe(textPath);
+    window.addEventListener("scroll", updateTextPosition);
+})
 
-
-// window.addEventListener('scroll',onScroll);
-
-
-
-
-
+//MOVIMENTO IMMAGINI
 gsap.to(".imgpiccolo", {
     y: 10,
     duration: 2,

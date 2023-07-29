@@ -493,15 +493,34 @@ max-height: 600px;
 }
 
 /* SEZIONE WAVE */
+
+.container .wave {
+    height: 150vh;
+
+}
 .wave {
     background-color: #fff9ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.wave {
+.wave svg {
+    overflow: visible;
+    width: 100%;
+}
+
+#text-path {
+    fill: #4F887E;
+    font-size: 60px;
+}
+
+/*.wave {
     font-size: 100px;
     color: #4F887E;
     padding: 200px 0px;
-}
+}*/
 
 /* SEZIONE GRID IMMAGINI*/
 .grid-container {
