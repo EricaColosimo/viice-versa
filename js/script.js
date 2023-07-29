@@ -15,28 +15,27 @@ close_menu.addEventListener("click", function() {
 })
 
 //APERTURA TENDA CART
-var open_cart = document.querySelector('#cart');
 var cartClose = document.querySelector(".cart-close");
-var chiusura_cart = document.querySelector('.chiusura-cart');
 
 // apri
+var open_cart = document.querySelector('#cart');
 open_cart.addEventListener("click", function() {
     cartClose.classList.add("cart--open");  //avevo messo add ma la var succ no run comunque
 })
 
 // chiudi
+var chiusura_cart = document.querySelector('.chiusura-cart');
 chiusura_cart.addEventListener("click", () => {
     cartClose.classList.remove("cart--open")
 })
 
 
-//var close_cart = document.querySelector(".chiusura-cart");
-//close_cart.addEventListener("click", function() {
-//    cartClose.classList.remove("cart--open");
-//})
-
 
 // ADD TO CART
+var shopClose = document.querySelector(".shop-close");
+
+
+//APRI
 var open_shop = document.querySelector('.fixed__content');
 
 open_shop.addEventListener("click", function() {
@@ -45,49 +44,49 @@ open_shop.addEventListener("click", function() {
 })
 
 
+//CHIUDI
+var chiude = document.querySelector('#chiude');
+chiude.addEventListener("click", () => {
+    shopClose.classList.remove("shop--open")
+})
 
+// PROVA TESTO WAVE - 2 PROVA - funzionante
 
+document.addEventListener('DOMContentLoaded', () => {
+    const textPath = document.getElementById("text-path");
+    const scrollSpeed = 2.5; //posso cambiare il valore per cambiare velocità testo
+    const animationDirection = "left"; // da che parte andrà il testo
+    const startPosition = -100; // settare la posizione di inizio
 
+    const updateTextPosition = () => {
+        const container = document.querySelector(".wave");
+        const containerRect = container.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
 
-//prova testo a WAVE
+        if (containerRect.top <= windowHeight && containerRect.bottom >= 0) {
+            const directionMultiplier = animationDirection === "right" ? 1 : -1;
+            const startOffset = startPosition + ((containerRect.top - windowHeight) / (containerRect.height + windowHeight)) * 100 * scrollSpeed * directionMultiplier;
+            textPath.setAttribute("startOffset", startOffset + "%");
+        }
+    }
 
-// var textPath = document.querySelector('#text-path');
-
-// var textContainer = document.querySelector('#text-container');
-
-// var path = document .quarySelector(
-//     textPath.getAttribute('href')
-// );
-
-// var pathLength = path.getTotalLength();
-// console.log(pathLength);
-
-// function updateTextPathOffset(offset){
-//     textPath.setAttribute('startOffset', offset);
-// }
-
-// updateTextPathOffset(pathLength);
-
-//function onScroll(){
-  //requestAnimationFrame(function() {
-    //var rect = textContainer.getBoundingClientRect();
-    //var scrollPercent = rect.y /
-    //window.innerHeight;
-    //console.log(scrollPercent);
-    //updateTextPathOffset( scrollPercent * 2 * pathLength);
-    //console.log(rect.y);
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                updateTextPosition();
+                }
     
-//    });   
-//}
+            });
+        },
+        { threshold: 0.1 }
+    );
 
+    observer.observe(textPath);
+    window.addEventListener("scroll", updateTextPosition);
+})
 
-
-// window.addEventListener('scroll',onScroll);
-
-
-
-
-
+//MOVIMENTO IMMAGINI
 gsap.to(".imgpiccolo", {
     y: 10,
     duration: 2,

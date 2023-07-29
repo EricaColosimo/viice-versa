@@ -126,26 +126,25 @@ nav ul li a#logo:hover:after {
     right: 23%;
     background: #F8EEDF;
     width: 55%;
-    height: 50%;
     z-index: 100000;
     /*transform: translateY(0);
     transition: all 0.5s ease-in-out;*/
 }
 
 .cart-close .title {
-    display: grid;
-    grid-template-columns: 90% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2E6D4;
 }
 
 .cart-close h2 {
-    background-color: #F2E6D4;
     padding: 20px;
     text-align: center;
     text-transform: uppercase;
     font-family: 'FuturaStd-Book', sans-serif;
     font-size: 26px;
     font-weight: 100;
-
 }
 
 .testo-cart-close {
@@ -153,6 +152,8 @@ nav ul li a#logo:hover:after {
     justify-content: center;
     align-items: center;
     height: 100%;
+    background: #F8EEDF;
+    padding: 100px;
 }
 
 
@@ -172,6 +173,7 @@ nav ul li a#logo:hover:after {
     background-color: #000;
     top: 15px;
     left: 90%;
+    cursor: pointer;
 }
 
 .cart-close span:after,
@@ -181,6 +183,7 @@ nav ul li a#logo:hover:after {
     width: 100%;
     position: absolute;
     background-color: #000;
+    cursor: pointer;
 
 }
 
@@ -254,13 +257,6 @@ main {
     font-family: 'FuturaStd-Book', sans-serif;
 }
 
-
-/*.shop-close {
-    display: block;
-    transform: translateY(100%);
-    background: transparent;
-}*/
-
 .shop-close {
     display: none;
 }
@@ -273,13 +269,11 @@ main {
     left: 15%;
     width: 70%;
     height: 70%;
-    padding: 100px;
+    padding: 20px;
     z-index: 100000;
     align-items: center;
     transform: translateY(0);
     transition: all 0.5s ease-in-out;
-    
-
 }
 
 .shop-close span {
@@ -291,6 +285,7 @@ main {
     top: 15px;
     left: 90%;
 }
+ 
 
 .box-img.up {
 max-width: 600px;
@@ -315,13 +310,20 @@ max-height: 600px;
     text-transform: uppercase;
     font-size: 17px;
     font-family: 'FuturaStd-Book', sans-serif;
-
 }
 
+.chiusura_shop {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
 
-
-
-
+.chiusura_shop img {
+    width: 32px;
+    height: 32px;
+}
 
 
 /* FINE HERO SECTION*/
@@ -430,8 +432,6 @@ max-height: 600px;
 .testo_art {
     max-width: 1320px;
     position: absolute;
-    /* top: 0;
-    transform: translate(40%, 30%); */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -455,7 +455,6 @@ max-height: 600px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /*padding: 200px 0px 0px 90px;*/
     padding-top: 300px;
     background-color: #fff9ee;
 }
@@ -494,15 +493,34 @@ max-height: 600px;
 }
 
 /* SEZIONE WAVE */
+
+.container .wave {
+    height: 150vh;
+
+}
 .wave {
     background-color: #fff9ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.wave {
+.wave svg {
+    overflow: visible;
+    width: 100%;
+}
+
+#text-path {
+    fill: #4F887E;
+    font-size: 60px;
+}
+
+/*.wave {
     font-size: 100px;
     color: #4F887E;
     padding: 200px 0px;
-}
+}*/
 
 /* SEZIONE GRID IMMAGINI*/
 .grid-container {
@@ -1172,7 +1190,7 @@ max-height: 600px;
 #tabella {
     width: 100%;
     height: 50%;
-    padding: 52px 0 0;
+    padding: 52px 0px;
 }
 
 .riga {
