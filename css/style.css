@@ -116,7 +116,7 @@ nav ul li a#logo:hover:after {
 
 .cart-close {
     display: none;
-    transform: translateY(-100%);
+    transform: translateY(0);
 }
 
 .cart-close.cart--open {
@@ -127,8 +127,8 @@ nav ul li a#logo:hover:after {
     background: #F8EEDF;
     width: 55%;
     z-index: 100000;
-    /*transform: translateY(0);
-    transition: all 0.5s ease-in-out;*/
+    transform: translateY(-100%);
+    transition: all 0.5s ease-in-out;
 }
 
 .cart-close .title {
