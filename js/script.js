@@ -184,15 +184,11 @@ gsap.to(".wine-bottle img", {
         trigger: ".wine-bottle img",
         start: "top -30%",
         toggleActions: "play pause resume reset",
-        scrub: 4,
+        scrub: 4
         
     }
 });
     
-
-
-
-
 
 
 // PROVO MOVIMENTO BOTTIGLIA
@@ -205,6 +201,19 @@ gsap.to(".wine-bottle img", {
     
 
 //});
+
+
+//MATCHMEDIA NON FUNZIONA
+
+let mm = gsap.matchMedia();
+
+mm.add(" (max-width: 1200px) ", () => {
+
+    gsap.to(".img-2", {
+        x:10
+       
+    });
+})
 
 
 
