@@ -50,13 +50,15 @@ chiude.addEventListener("click", () => {
     shopClose.classList.remove("shop--open")
 })
 
-// PROVA TESTO WAVE - 2 PROVA - funzionante
+
+
+//PROVA TESTO WAVE - 2 PROVA - funzionante
 
 document.addEventListener('DOMContentLoaded', () => {
     const textPath = document.getElementById("text-path");
-    const scrollSpeed = 2.5; //posso cambiare il valore per cambiare velocità testo
-    const animationDirection = "left"; // da che parte andrà il testo
-    const startPosition = -100; // settare la posizione di inizio
+    const scrollSpeed = 3.5; //posso cambiare il valore per cambiare velocità testo
+    const animationDirection = "left"; // da che parte andrà il testo, left dato succ sarà positivo se right sarà negativo
+    const startPosition = 210; // settare la posizione di inizio
 
     const updateTextPosition = () => {
         const container = document.querySelector(".wave");
@@ -64,16 +66,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const windowHeight = window.innerHeight;
 
         if (containerRect.top <= windowHeight && containerRect.bottom >= 0) {
-            const directionMultiplier = animationDirection === "right" ? 1 : -1;
+            const directionMultiplier = animationDirection === "left" ? 1 : -1;
             const startOffset = startPosition + ((containerRect.top - windowHeight) / (containerRect.height + windowHeight)) * 100 * scrollSpeed * directionMultiplier;
             textPath.setAttribute("startOffset", startOffset + "%");
-        }
+       }
     }
 
     const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
+       (entries) => {
+           entries.forEach((entry) => {
+               if (entry.isIntersecting) {
                 updateTextPosition();
                 }
     
@@ -85,6 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(textPath);
     window.addEventListener("scroll", updateTextPosition);
 })
+
+
 
 //MOVIMENTO IMMAGINI
 gsap.to(".imgpiccolo", {
@@ -191,27 +195,16 @@ gsap.to(".wine-bottle img", {
     
 
 
-// PROVO MOVIMENTO BOTTIGLIA
-
-
-
-//gsap.matchMedia(max-width:650px)(".img-2", {
-    //x: 100,
-    //duration: 3,
-    
-
-//});
 
 
 //MATCHMEDIA NON FUNZIONA
 
 let mm = gsap.matchMedia();
 
-mm.add(" (max-width: 1200px) ", () => {
+mm.add("(max-width: 1200px)", () => {
 
     gsap.to(".img-2", {
-        x:10
-       
+        x:0  
     });
 })
 
