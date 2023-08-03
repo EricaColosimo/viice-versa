@@ -495,16 +495,16 @@ max-height: 600px;
 /* SEZIONE WAVE */
 
 .container .wave {
-    height: 150vh;
+    height: 100vh;
 
 }
 .wave {
     background-color: #fff9ee;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;  
 }
+
 
 .wave svg {
     overflow: visible;
@@ -513,14 +513,10 @@ max-height: 600px;
 
 #text-path {
     fill: #4F887E;
-    font-size: 60px;
+    font-size: 40px;
+    font-family: 'FuturaStdBook', sans-serif;
 }
 
-/*.wave {
-    font-size: 100px;
-    color: #4F887E;
-    padding: 200px 0px;
-}*/
 
 /* SEZIONE GRID IMMAGINI*/
 .grid-container {
@@ -961,6 +957,8 @@ max-height: 600px;
 .wine-box-el-frame .middle img {
     width: 100%;
 }
+
+
 
 /* SCRITTE A ONDA */
 
@@ -1876,15 +1874,18 @@ max-height: 600px;
     /* SEZIONE CELEB */
 
     .celeb {
-        padding-top: 100px;
+        padding-top: 200px;
+        padding-bottom: 50px;
     }
 
     .celeb-top-img {
         max-width: 300px;
+        min-height: 230px;
     }
 
     .celeb-top-text h3 {
         font-size: calc(0.0144230769 * 100vw + 23.2307692308px);
+        transform: translateY(-80px);
     }
 
     .celeb-top-video {
