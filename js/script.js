@@ -88,6 +88,73 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener("scroll", updateTextPosition);
 })
 
+// MOVIMENTO BOTTIGLIA
+
+let tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.wine-bottle-img',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: true,
+        markers: true
+    }
+})
+
+tl.to('.wine-bottle-img', {
+    y: 10
+})
+
+gsap.to(".wine-bottle-img", {
+    y: 10,
+    x: -350,
+    top: '-10%',
+    paddingBottom: '80%',
+    width: '200px',
+    height: '900px',
+    scrollTrigger: {
+        trigger: ".wine-mix",
+        start: "top 50%",
+        //toggleActions: "play pause resume reset",
+        scrub: true,
+        markers: true
+
+    }
+});
+
+gsap.to(".wine-bottle-img", {
+    transform: 'rotate(30deg)',
+    scrollTrigger: {
+        trigger: ".product-img",
+        start: "top 10%",
+        //toggleActions: "play pause resume reset",
+        scrub: true,
+        markers: true
+
+    }
+});
+
+
+
+
+
+
+
+//smooth scroll 
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+    console.log(e)
+})
+
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
+
+
 
 
 //MOVIMENTO IMMAGINI
