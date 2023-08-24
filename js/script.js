@@ -180,7 +180,7 @@ gsap.to(".img-3", {
     scrollTrigger: {
         trigger: ".img-3",
         start: "top 80%",
-        toggleActions: "play pause resume reset",
+        //toggleActions: "play pause resume reset",
         scrub: 4
     }
 });
@@ -244,6 +244,11 @@ gsap.to(".celeb-bottom-img", {
 
 let mm = gsap.matchMedia();
 mm.add("(max-width: 1200px)", () => {
+
+    gsap.to(".imgpiccolo", {
+        y: 0
+
+    });
 
     gsap.to(".img-2", {
         x: 250,
@@ -316,15 +321,14 @@ mm.add("(max-width: 768px)", () => {
         cartClose.classList.remove("cart--open")
     });
 
+    gsap.to(".img-3", {
+        borderRadius: "300px"
+
+    });
+
     gsap.to(".celeb-top-img", {
         y: 0,
-        duration: 4,
-        scrollTrigger: {
-            trigger: ".celeb-top-img",
-            start: "top 90%",
-            toggleActions: "play pause resume reset",
-            scrub: 2
-        }
+        
 
     });
 

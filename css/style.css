@@ -398,8 +398,9 @@ main {
 }
 
 .container_testo iframe {
-    max-width: 214px;
+    max-width: 170px;
     border-radius: 100px;
+    max-height: 107px;
 }
 
 /* IMMAGINE BG SPIAGGIA*/
@@ -436,7 +437,8 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-bottom: 180px;
-    padding: 0px 30px;
+    padding: 0px 15px;
+    width: 100%;
 }
 
 .testo_art h2 {
@@ -444,6 +446,7 @@ main {
     font-size: 240px;
     font-family: "Marcellus-Regular", sans-serif;
     font-size: 190px;
+    font-weight: 100;
     color: #10312B;
     line-height: 100%;
     text-align: center;
@@ -633,25 +636,25 @@ main {
 }
 
 .relax-box-video {
-    padding-bottom: 60%;
+    /*padding-bottom: 60%;*/
     position: relative;
     overflow: hidden;
     border-radius: 1000px;
     mask-image: -webkit-radial-gradient(white, black);
     width: 100%;
+    height: 100%;
+    max-width: 500px;
 }
 
 .relax-box-video iframe {
-    overflow: hidden;
-    border-radius: 1000px;
+    overflow: hidden; 
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(1.6);
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
+    
 }
 
 .relax-box-testo {
@@ -2065,6 +2068,8 @@ main {
 
     .container_testo iframe {
         width: 100%;
+        max-height: 75px;
+        
     }
 
     .immagine {
@@ -2841,7 +2846,7 @@ main {
     }
 
     .sezione-art {
-        min-height: 62vh;
+        min-height: 80vh;
     }
 
     /*.testo_art {
